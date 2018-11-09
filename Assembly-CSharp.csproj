@@ -60,6 +60,7 @@
      <Compile Include="Assets\Script\CubyTrail.cs" />
      <Compile Include="Assets\Script\CubyWeaponMovement.cs" />
      <Compile Include="Assets\Script\Destroy.cs" />
+     <Compile Include="Assets\Script\DungeonGenerator.cs" />
      <Compile Include="Assets\Script\DungeonTestScript.cs" />
      <Compile Include="Assets\Script\EnemyBloodScript.cs" />
      <Compile Include="Assets\Script\EnemyExplosionScript.cs" />

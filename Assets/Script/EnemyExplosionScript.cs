@@ -7,15 +7,8 @@ public class EnemyExplosionScript : MonoBehaviour
 
     [SerializeField] private GameObject _explosionPiece;
 
-	// Use this for initialization
-	void Start () {
-		
-	}
-	
-	// Update is called once per frame
-	void Update () {
-		
-	}
+    private float _force = 2;
+    
 
     public void Explode()
     {
@@ -29,8 +22,8 @@ public class EnemyExplosionScript : MonoBehaviour
             GameObject piece = Instantiate(_explosionPiece, position, Quaternion.identity);
 
             Vector2 force = Vector2.zero;
-            force.x = Random.Range(-5, 5);
-            force.y = Random.Range(-5, 5);
+            force.x = Random.Range(-_force, _force);
+            force.y = Random.Range(-_force, _force);
 
            piece.GetComponent<Rigidbody2D>().AddForce(force, ForceMode2D.Impulse);
 

@@ -6,17 +6,19 @@ public class CameraShake : MonoBehaviour {
 
 	[SerializeField] private Animator _anim;
 
-	// Use this for initialization
-	void Start () {
-		
-	}
-	
-	// Update is called once per frame
-	void Update () {
-		
-	}
+    private static CameraShake _instance = null;
 
-	public void Shake()
+    private void Awake()
+    {
+        if (_instance == null) _instance = this;
+    }
+
+    public static CameraShake GetInstance()
+    {
+        return _instance;
+    }
+
+    public void Shake()
 	{
 		_anim.SetTrigger("Shake");
 	}

@@ -5,13 +5,11 @@ using UnityEngine;
 public class CubyWeaponMovement : MonoBehaviour
 {
 
-    [SerializeField] private GameObject _weapon;
     [SerializeField] private bool _doFlip = false;
 
     // Use this for initialization
     void Start()
     {
-        _weapon = gameObject.transform.Find("Weapon").gameObject;
     }
 
     // Update is called once per frame
@@ -34,12 +32,12 @@ public class CubyWeaponMovement : MonoBehaviour
         {
             if (angle > 90.0f && angle < 270.0f)
             {
-                _weapon.transform.localScale = new Vector3(1, -1, 1);
+                transform.localScale = new Vector3(1, -1, 1);
             }
-            else _weapon.transform.localScale = new Vector3(1, 1, 1);
+            else transform.localScale = new Vector3(1, 1, 1);
         }
 
-        _weapon.transform.rotation = Quaternion.Euler(new Vector3(0, 0, angle));
+        transform.rotation = Quaternion.Euler(new Vector3(0, 0, angle));
     }
 
     

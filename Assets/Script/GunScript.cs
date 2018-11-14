@@ -15,16 +15,22 @@ public class GunScript : MonoBehaviour
 
     private float _Cooldown = 0.0f;
 
+    //shooting stats
+    private int _bulletsPerShot = 1;
+    private float _angleBetweenShots = 5.0f * Mathf.Deg2Rad;
+
+
     private CameraShake _shake;
     // Use this for initialization
-	void Start () {
-        _shake = CameraShake.GetInstance();
-	}
-	
-	// Update is called once per frame
-	void Update ()
+    void Start()
     {
-        if(!_IsAutomatic)
+        _shake = CameraShake.GetInstance();
+    }
+
+    // Update is called once per frame
+    void Update()
+    {
+        if (!_IsAutomatic)
         {
             if (Input.GetMouseButtonDown(0))
             {
@@ -38,16 +44,16 @@ public class GunScript : MonoBehaviour
             _Cooldown -= Time.deltaTime;
             if (Input.GetMouseButton(0))
             {
-                if(_Cooldown <= 0.0f)
+                if (_Cooldown <= 0.0f)
                 {
-                    _Cooldown = _firerate;
+                    _Cooldown = _firerate; //times player firerate
                     HandleShooting();
                     _shake.Shake();
                 }
             }
-                //handle cooldown
+            //handle cooldown
         }
-	}
+    }
 
     public float CalculateAngle()
     {
@@ -70,7 +76,7 @@ public class GunScript : MonoBehaviour
     {
         Quaternion quat = CalculateRotation(angle);
         GameObject bullet = Instantiate(_bullet, _gunpoint.transform.position, quat);
-        bullet.transform.localScale = new Vector3(0.5f, 0.5f, 1.0f);
+        //bullet.transform.localScale = new Vector3(0.5f, 0.5f, 1.0f);
         Vector2 direction = new Vector2(Mathf.Cos(angle), Mathf.Sin(angle));
 
         bullet.GetComponent<BulletScript>().SetDirection(direction.x, direction.y);
@@ -79,10 +85,33 @@ public class GunScript : MonoBehaviour
 
     public virtual void HandleShooting()
     {
-        float angle = CalculateAngle();
-        SpawnBullet(angle);
+        if (_bulletsPerShot > 1)
+        {
+            float startAngle = -_angleBetweenShots * (_bulletsPerShot / 2);
+
+            for (int i = 0; i < _bulletsPerShot; ++i)
+            {
+                float angle = CalculateAngle();
+                angle += startAngle + (i * _angleBetweenShots);
+                SpawnBullet(angle);
+            }
+        }
+        else 
+        {
+            SpawnBullet(CalculateAngle());
+        }
+    }
+    public void SetBulletsPerShot(int number)
+    {
+        _bulletsPerShot = number;
+    }
+    public void MultiplyBulletsPerShot(int number)
+    {
+        _bulletsPerShot *= number;
+    }
+    public void SetAngleBetweenShot(float angle)
+    {
+        _angleBetweenShots = angle * Mathf.Deg2Rad;
     }
 
-    
-    
 }

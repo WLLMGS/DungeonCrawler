@@ -21,8 +21,6 @@ public class EnemyHealth : MonoBehaviour
     public void AddHealth(float health)
     {
         _health += health;
-
-        Debug.Log("Health: " + _health);
     }
 
     public bool IsAlive()

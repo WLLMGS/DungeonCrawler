@@ -54,11 +54,14 @@
   </ItemGroup>
   <ItemGroup>
      <Compile Include="Assets\Script\BulletScript.cs" />
+     <Compile Include="Assets\Script\CameraFollowScript.cs" />
      <Compile Include="Assets\Script\CameraShake.cs" />
      <Compile Include="Assets\Script\CrosshairScript.cs" />
+     <Compile Include="Assets\Script\CubyGameManager.cs" />
      <Compile Include="Assets\Script\CubyMovement.cs" />
      <Compile Include="Assets\Script\CubyTrail.cs" />
      <Compile Include="Assets\Script\CubyWeaponMovement.cs" />
+     <Compile Include="Assets\Script\CubyWeaponTracker.cs" />
      <Compile Include="Assets\Script\Destroy.cs" />
      <Compile Include="Assets\Script\DungeonGenerator.cs" />
      <Compile Include="Assets\Script\DungeonTestScript.cs" />
@@ -67,11 +70,19 @@
      <Compile Include="Assets\Script\EnemyHealth.cs" />
      <Compile Include="Assets\Script\EnemyHealthManager.cs" />
      <Compile Include="Assets\Script\EnemyMovementScript.cs" />
+     <Compile Include="Assets\Script\EnemySpawner.cs" />
      <Compile Include="Assets\Script\GunScript.cs" />
+     <Compile Include="Assets\Script\ItemSpawnScript.cs" />
+     <Compile Include="Assets\Script\MinimapCamera.cs" />
+     <Compile Include="Assets\Script\PowerUps\DoubleShotPowerup.cs" />
+     <Compile Include="Assets\Script\PowerUps\PowerUpBase.cs" />
+     <Compile Include="Assets\Script\RoomController.cs" />
+     <Compile Include="Assets\Script\RoomStats.cs" />
      <Compile Include="Assets\Script\ShotgunScript.cs" />
      <Compile Include="Assets\Script\SplatterBehavior.cs" />
      <Compile Include="Assets\Script\WeaponHit.cs" />
      <Compile Include="Assets\Script\WeaponPickupScript.cs" />
+     <Compile Include="Assets\Script\WeaponSpawnScript.cs" />
  <Reference Include="UnityEditor.StandardEvents">
  <HintPath>D:/Unity Projects/DungeonCrawler/Library/ScriptAssemblies/UnityEditor.StandardEvents.dll</HintPath>
  </Reference>

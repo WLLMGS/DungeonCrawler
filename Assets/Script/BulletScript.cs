@@ -5,6 +5,7 @@ using UnityEngine;
 public class BulletScript : MonoBehaviour {
 
     [SerializeField] private float _movespeed = 5.0f;
+    [SerializeField] private bool _isPiercing = true;
 
     private Vector2 _direction = Vector2.zero;
     private Rigidbody2D _rigid;
@@ -38,7 +39,7 @@ public class BulletScript : MonoBehaviour {
         {
             col.gameObject.GetComponent<EnemyBloodScript>().SpawnBlood();
             col.gameObject.GetComponent<EnemyHealth>().AddHealth(-_damage);
-            Destroy(gameObject);
+            if(!_isPiercing) Destroy(gameObject);
         }
     }
 }

@@ -52,10 +52,8 @@ GameObject:
   m_Component:
   - component: {fileID: 4872321817523636}
   - component: {fileID: 114711998794787424}
-  - component: {fileID: 61047138614599108}
   - component: {fileID: 114577745879859970}
   - component: {fileID: 61857950475053904}
-  - component: {fileID: 114735992356494794}
   m_Layer: 0
   m_Name: Weapon_MachineGun
   m_TagString: Untagged
@@ -97,38 +95,13 @@ Transform:
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 1743229723292328}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 5.02, y: 1.776, z: -5}
+  m_LocalPosition: {x: -7.0616946, y: 0.5041336, z: -5}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 4422253789644440}
   m_Father: {fileID: 0}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!61 &61047138614599108
-BoxCollider2D:
-  m_ObjectHideFlags: 1
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 1743229723292328}
-  m_Enabled: 1
-  m_Density: 1
-  m_Material: {fileID: 0}
-  m_IsTrigger: 1
-  m_UsedByEffector: 0
-  m_UsedByComposite: 0
-  m_Offset: {x: 0.46265137, y: -0.06609297}
-  m_SpriteTilingProperty:
-    border: {x: 0, y: 0, z: 0, w: 0}
-    pivot: {x: 0, y: 0}
-    oldSize: {x: 0, y: 0}
-    newSize: {x: 0, y: 0}
-    adaptiveTilingThreshold: 0
-    drawMode: 0
-    adaptiveTiling: 0
-  m_AutoTiling: 0
-  serializedVersion: 2
-  m_Size: {x: 0.65631604, y: 0.6563158}
-  m_EdgeRadius: 0
 --- !u!61 &61857950475053904
 BoxCollider2D:
   m_ObjectHideFlags: 1
@@ -193,17 +166,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _doFlip: 1
---- !u!114 &114735992356494794
-MonoBehaviour:
-  m_ObjectHideFlags: 1
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 1743229723292328}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 08d310f899ecc3e4f87d687a6d2f6f84, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!212 &212921012270478874
 SpriteRenderer:
   m_ObjectHideFlags: 1

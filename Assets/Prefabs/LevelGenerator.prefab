@@ -1,0 +1,75 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!1001 &100100000
+Prefab:
+  m_ObjectHideFlags: 1
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 0}
+    m_Modifications: []
+    m_RemovedComponents: []
+  m_SourcePrefab: {fileID: 0}
+  m_RootGameObject: {fileID: 1305035503141484}
+  m_IsPrefabAsset: 1
+--- !u!1 &1305035503141484
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 4116977401447566}
+  - component: {fileID: 114873277671264386}
+  - component: {fileID: 114465951656128978}
+  m_Layer: 0
+  m_Name: LevelGenerator
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &4116977401447566
+Transform:
+  m_ObjectHideFlags: 1
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1305035503141484}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 2.253129, y: 0.26214826, z: 0.45703125}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_RootOrder: 0
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &114465951656128978
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1305035503141484}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7b0747a3c1aff9d4886a367b16798ea3, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _enemy: {fileID: 1104870580532640, guid: 3a5368207a9ce3147a1f45d05950c832, type: 2}
+--- !u!114 &114873277671264386
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1305035503141484}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4dc3e337842fb45419cb4c95c68b52d8, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _room: {fileID: 1938338355653876, guid: 5193ca2f6562df243ac229aa35c9b406, type: 2}
+  _hallwayHorizontal: {fileID: 1260252592445542, guid: b67f5abc4f043c5489fe23dbb11fc381,
+    type: 2}
+  _hallwayVertical: {fileID: 1690173108415928, guid: 1cd2045667d34484da6e2eaae2b0fc47,
+    type: 2}
+  _width: 33
+  _height: 33
+  _startRoomLayouts:
+  - {fileID: 1733490242435106, guid: a9cba09ae501dc644a1c8b679c71f332, type: 2}

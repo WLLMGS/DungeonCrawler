@@ -161,10 +161,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 2221452cebb93014b824a42ddac8341e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _gundamage: 2
+  _gundamage: 1
   _bullet: {fileID: 1179704381822860, guid: 6206b5554e325a74c9ec6e16fcb58cea, type: 2}
   _gunpoint: {fileID: 1212792753704804}
-  _IsAutomatic: 0
+  _IsAutomatic: 1
   _firerate: 0.1
 --- !u!212 &212828941744041110
 SpriteRenderer:

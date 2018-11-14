@@ -20,7 +20,7 @@ GameObject:
   m_Component:
   - component: {fileID: 4879767141753796}
   - component: {fileID: 212219103436183092}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: DungeonTileset 1_17
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -35,7 +35,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 4960446203586430}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: SocketLeft
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -51,7 +51,7 @@ GameObject:
   m_Component:
   - component: {fileID: 4012902535222036}
   - component: {fileID: 212596643115916760}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: DungeonTileset 1_19
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -67,7 +67,7 @@ GameObject:
   m_Component:
   - component: {fileID: 4567859043755432}
   - component: {fileID: 212470425273813978}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: DungeonTileset 1_24
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -84,7 +84,7 @@ GameObject:
   - component: {fileID: 4999662217247528}
   - component: {fileID: 61969756930372446}
   - component: {fileID: 61572426299848364}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: Hall_Sideways
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -100,7 +100,7 @@ GameObject:
   m_Component:
   - component: {fileID: 4649951402285076}
   - component: {fileID: 212316307659965982}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: DungeonTileset 1_23
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -116,7 +116,7 @@ GameObject:
   m_Component:
   - component: {fileID: 4963993144698556}
   - component: {fileID: 212821507611301748}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: DungeonTileset 1_3
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -132,7 +132,7 @@ GameObject:
   m_Component:
   - component: {fileID: 4121162616271074}
   - component: {fileID: 212500351736463474}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: DungeonTileset 1_1
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -148,7 +148,7 @@ GameObject:
   m_Component:
   - component: {fileID: 4324128310202964}
   - component: {fileID: 212422080981712370}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: DungeonTileset 1_26
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -164,7 +164,7 @@ GameObject:
   m_Component:
   - component: {fileID: 4014411475848018}
   - component: {fileID: 212859362251740176}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: DungeonTileset 1_8
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -180,7 +180,7 @@ GameObject:
   m_Component:
   - component: {fileID: 4266890977984600}
   - component: {fileID: 212042306232180986}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: DungeonTileset 1_4
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -195,7 +195,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 4994420976526236}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: SocketRight
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -211,7 +211,7 @@ GameObject:
   m_Component:
   - component: {fileID: 4894217921499302}
   - component: {fileID: 212999008460458934}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: DungeonTileset 1_2
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -381,7 +381,7 @@ Transform:
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 1260252592445542}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 14.5, y: 0, z: -8.509114}
+  m_LocalPosition: {x: -1.0983906, y: -3.9120383, z: -8.509114}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 4894217921499302}

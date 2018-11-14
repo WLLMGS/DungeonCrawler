@@ -8,6 +8,8 @@ public class EnemyMovementScript : MonoBehaviour {
 
     private GameObject _player;
     private Rigidbody2D _rigid;
+    private bool _IsActivated = false;
+
 	// Use this for initialization
 	void Start () {
         _player = GameObject.Find("Cuby");
@@ -16,11 +18,16 @@ public class EnemyMovementScript : MonoBehaviour {
 	
 	// Update is called once per frame
 	void Update () {
-        HandleMovement();
+        if(_IsActivated) HandleMovement();
 	}
 
     void HandleMovement()
     {
         transform.position = Vector3.MoveTowards(transform.position, _player.transform.position, _maxmovementspeed * Time.deltaTime);
+    }
+
+    public void Activate(bool activate)
+    {
+        _IsActivated = activate;
     }
 }

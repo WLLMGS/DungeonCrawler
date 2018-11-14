@@ -36,7 +36,7 @@ GameObject:
   m_Component:
   - component: {fileID: 4189769812755804}
   - component: {fileID: 61618345221289840}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: Collider_Left_Full
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -52,7 +52,7 @@ GameObject:
   m_Component:
   - component: {fileID: 4533063862398760}
   - component: {fileID: 61680814919667650}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: Collider_Left_Half_1
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -68,8 +68,23 @@ GameObject:
   m_Component:
   - component: {fileID: 4332893339088842}
   - component: {fileID: 212181945506760224}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: DungeonTileset 1_6
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!1 &1201829061207546
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 4648270212221410}
+  m_Layer: 0
+  m_Name: SpawnRadius_min
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -84,13 +99,28 @@ GameObject:
   m_Component:
   - component: {fileID: 4267009041518294}
   - component: {fileID: 61167154636167202}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: Collider_Left_Half_2
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 0
+--- !u!1 &1217153028270986
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 4526345858520046}
+  m_Layer: 0
+  m_Name: SpawnRadius_max
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
 --- !u!1 &1228954175779624
 GameObject:
   m_ObjectHideFlags: 0
@@ -101,7 +131,7 @@ GameObject:
   - component: {fileID: 4999902808794472}
   - component: {fileID: 212889784375670102}
   - component: {fileID: 61559836804516276}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: leftwall
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -116,7 +146,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 4778553995385330}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: SocketRight
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -133,7 +163,7 @@ GameObject:
   - component: {fileID: 4614693034184078}
   - component: {fileID: 212023871950264552}
   - component: {fileID: 61093487992593090}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: downwall
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -149,7 +179,7 @@ GameObject:
   m_Component:
   - component: {fileID: 4937806166147568}
   - component: {fileID: 212326655531581088}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: DungeonTileset 1_14
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -165,7 +195,7 @@ GameObject:
   m_Component:
   - component: {fileID: 4699336491327008}
   - component: {fileID: 212110297685341950}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: DungeonTileset 1_29
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -181,7 +211,7 @@ GameObject:
   m_Component:
   - component: {fileID: 4809205180625228}
   - component: {fileID: 61507295270859648}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: Collider_Right_Half_2
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -197,7 +227,7 @@ GameObject:
   m_Component:
   - component: {fileID: 4588947522872528}
   - component: {fileID: 61099316239453348}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: Collider_Down_Half_2
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -214,7 +244,7 @@ GameObject:
   - component: {fileID: 4434328936943658}
   - component: {fileID: 212468472854470344}
   - component: {fileID: 61990349438258762}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: TopWallTop
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -230,7 +260,7 @@ GameObject:
   m_Component:
   - component: {fileID: 4611292139234138}
   - component: {fileID: 212707568266437504}
-  m_Layer: 0
+  m_Layer: 11
   m_Name: floor
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -246,7 +276,7 @@ GameObject:
   m_Component:
   - component: {fileID: 4562433640075532}
   - component: {fileID: 61219207068764010}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: Collider_Right_Half_1
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -262,7 +292,7 @@ GameObject:
   m_Component:
   - component: {fileID: 4353999985877488}
   - component: {fileID: 212666692006099704}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: DungeonTileset 1_5
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -278,7 +308,7 @@ GameObject:
   m_Component:
   - component: {fileID: 4982493798578636}
   - component: {fileID: 61939075822342090}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: Collider_Down_Full
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -295,7 +325,7 @@ GameObject:
   - component: {fileID: 4367394865945080}
   - component: {fileID: 212900785174353152}
   - component: {fileID: 61770712199687664}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: rightwall
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -311,7 +341,7 @@ GameObject:
   m_Component:
   - component: {fileID: 4522938015190256}
   - component: {fileID: 61327924241803768}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: Collider_Right_Full
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -327,7 +357,7 @@ GameObject:
   m_Component:
   - component: {fileID: 4933969360167392}
   - component: {fileID: 212130534977977190}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: DungeonTileset 1_13
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -343,7 +373,7 @@ GameObject:
   m_Component:
   - component: {fileID: 4706240124451730}
   - component: {fileID: 61243900855102622}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: Collider_Top_Full
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -359,7 +389,7 @@ GameObject:
   m_Component:
   - component: {fileID: 4001810453125836}
   - component: {fileID: 212483488722919950}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: DungeonTileset 1_28
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -375,7 +405,7 @@ GameObject:
   m_Component:
   - component: {fileID: 4822890283257866}
   - component: {fileID: 61364465679526558}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: Collider_Top_Half_1
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -390,9 +420,12 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 4805840620745046}
+  - component: {fileID: 61941711004314716}
+  - component: {fileID: 114191089450186994}
+  - component: {fileID: 114120034824879220}
   m_Layer: 0
   m_Name: Room
-  m_TagString: Untagged
+  m_TagString: Room
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -406,7 +439,7 @@ GameObject:
   m_Component:
   - component: {fileID: 4717055608796768}
   - component: {fileID: 61431145038456776}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: Collider_Top_Half_2
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -422,7 +455,7 @@ GameObject:
   m_Component:
   - component: {fileID: 4655798928077228}
   - component: {fileID: 61906108131464014}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: Collider_Down_Half_1
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -546,6 +579,19 @@ Transform:
   m_Father: {fileID: 4805840620745046}
   m_RootOrder: 16
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!4 &4526345858520046
+Transform:
+  m_ObjectHideFlags: 1
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1217153028270986}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 9, y: 3, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 4805840620745046}
+  m_RootOrder: 25
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!4 &4533063862398760
 Transform:
   m_ObjectHideFlags: 1
@@ -610,6 +656,19 @@ Transform:
   m_Children: []
   m_Father: {fileID: 4805840620745046}
   m_RootOrder: 2
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!4 &4648270212221410
+Transform:
+  m_ObjectHideFlags: 1
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1201829061207546}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: -9, y: -4, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 4805840620745046}
+  m_RootOrder: 26
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!4 &4655798928077228
 Transform:
@@ -711,6 +770,8 @@ Transform:
   - {fileID: 4717055608796768}
   - {fileID: 4655798928077228}
   - {fileID: 4588947522872528}
+  - {fileID: 4526345858520046}
+  - {fileID: 4648270212221410}
   m_Father: {fileID: 0}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -800,7 +861,7 @@ BoxCollider2D:
   m_GameObject: {fileID: 1379810547156840}
   m_Enabled: 0
   m_Density: 1
-  m_Material: {fileID: 0}
+  m_Material: {fileID: 6200000, guid: 07cbab2d0be3cad46b92bcb9cbd4aed3, type: 2}
   m_IsTrigger: 0
   m_UsedByEffector: 0
   m_UsedByComposite: 0
@@ -815,7 +876,7 @@ BoxCollider2D:
     adaptiveTiling: 0
   m_AutoTiling: 0
   serializedVersion: 2
-  m_Size: {x: 16, y: 1}
+  m_Size: {x: 20, y: 1}
   m_EdgeRadius: 0
 --- !u!61 &61099316239453348
 BoxCollider2D:
@@ -1025,7 +1086,7 @@ BoxCollider2D:
   m_GameObject: {fileID: 1228954175779624}
   m_Enabled: 0
   m_Density: 1
-  m_Material: {fileID: 0}
+  m_Material: {fileID: 6200000, guid: 07cbab2d0be3cad46b92bcb9cbd4aed3, type: 2}
   m_IsTrigger: 0
   m_UsedByEffector: 0
   m_UsedByComposite: 0
@@ -1040,7 +1101,7 @@ BoxCollider2D:
     adaptiveTiling: 0
   m_AutoTiling: 0
   serializedVersion: 2
-  m_Size: {x: 1, y: 9}
+  m_Size: {x: 1, y: 11}
   m_EdgeRadius: 0
 --- !u!61 &61618345221289840
 BoxCollider2D:
@@ -1100,7 +1161,7 @@ BoxCollider2D:
   m_GameObject: {fileID: 1737542265840374}
   m_Enabled: 0
   m_Density: 1
-  m_Material: {fileID: 0}
+  m_Material: {fileID: 6200000, guid: 07cbab2d0be3cad46b92bcb9cbd4aed3, type: 2}
   m_IsTrigger: 0
   m_UsedByEffector: 0
   m_UsedByComposite: 0
@@ -1115,7 +1176,7 @@ BoxCollider2D:
     adaptiveTiling: 0
   m_AutoTiling: 0
   serializedVersion: 2
-  m_Size: {x: 1, y: 9}
+  m_Size: {x: 1, y: 11}
   m_EdgeRadius: 0
 --- !u!61 &61906108131464014
 BoxCollider2D:
@@ -1167,6 +1228,31 @@ BoxCollider2D:
   serializedVersion: 2
   m_Size: {x: 19.53, y: 1}
   m_EdgeRadius: 0
+--- !u!61 &61941711004314716
+BoxCollider2D:
+  m_ObjectHideFlags: 1
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1938338355653876}
+  m_Enabled: 1
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IsTrigger: 1
+  m_UsedByEffector: 0
+  m_UsedByComposite: 0
+  m_Offset: {x: 0, y: 0}
+  m_SpriteTilingProperty:
+    border: {x: 0, y: 0, z: 0, w: 0}
+    pivot: {x: 0, y: 0}
+    oldSize: {x: 0, y: 0}
+    newSize: {x: 0, y: 0}
+    adaptiveTilingThreshold: 0
+    drawMode: 0
+    adaptiveTiling: 0
+  m_AutoTiling: 0
+  serializedVersion: 2
+  m_Size: {x: 19, y: 10}
+  m_EdgeRadius: 0
 --- !u!61 &61990349438258762
 BoxCollider2D:
   m_ObjectHideFlags: 1
@@ -1175,7 +1261,7 @@ BoxCollider2D:
   m_GameObject: {fileID: 1554878829246642}
   m_Enabled: 0
   m_Density: 1
-  m_Material: {fileID: 0}
+  m_Material: {fileID: 6200000, guid: 07cbab2d0be3cad46b92bcb9cbd4aed3, type: 2}
   m_IsTrigger: 0
   m_UsedByEffector: 0
   m_UsedByComposite: 0
@@ -1192,6 +1278,28 @@ BoxCollider2D:
   serializedVersion: 2
   m_Size: {x: 19, y: 2}
   m_EdgeRadius: 0
+--- !u!114 &114120034824879220
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1938338355653876}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 481b5515b7ab516448aa2f3072038204, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+--- !u!114 &114191089450186994
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1938338355653876}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9cbb94ea0f8b4f74092aa610671387fc, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!212 &212023871950264552
 SpriteRenderer:
   m_ObjectHideFlags: 1

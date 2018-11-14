@@ -101,6 +101,9 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _TTL: 0.5
+  _random: 0
+  _range_min: 0
+  _range_max: 1
 --- !u!114 &114499661912808478
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -113,6 +116,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _movespeed: 30
+  _isPiercing: 0
 --- !u!212 &212534984423220232
 SpriteRenderer:
   m_ObjectHideFlags: 1

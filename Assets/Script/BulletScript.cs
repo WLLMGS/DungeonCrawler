@@ -10,10 +10,11 @@ public class BulletScript : MonoBehaviour {
     private Vector2 _direction = Vector2.zero;
     private Rigidbody2D _rigid;
     private float _damage = 0;
-
+    private PlayerStats _playerStats;
 	void Start()
     {
         _rigid = GetComponent<Rigidbody2D>();
+        _playerStats = PlayerStats.GetInstance();
     }
 
 	void FixedUpdate () {
@@ -38,7 +39,7 @@ public class BulletScript : MonoBehaviour {
         if (col.gameObject.tag == "Enemy")
         {
             col.gameObject.GetComponent<EnemyBloodScript>().SpawnBlood();
-            col.gameObject.GetComponent<EnemyHealth>().AddHealth(-_damage);
+            col.gameObject.GetComponent<EnemyHealth>().AddHealth(-_damage * _playerStats.GetDamage());
             if(!_isPiercing) Destroy(gameObject);
         }
     }

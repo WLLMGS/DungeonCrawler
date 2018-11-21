@@ -34,7 +34,7 @@ public class DungeonGenerator : MonoBehaviour
     {
         return _instance;
     }
-    public void GenerateLevel(int w, int h, int r)
+    public void GenerateLevel(int w, int h, int r, int itemrooms)
     {
         _width = w;
         _height = h;
@@ -64,7 +64,7 @@ public class DungeonGenerator : MonoBehaviour
         AddRooms();
 
         //add item rooms
-        AddItemRooms(1);
+        AddItemRooms(itemrooms);
 
         //add spawn room
         AddSpawnroom();
@@ -456,6 +456,11 @@ public class DungeonGenerator : MonoBehaviour
             }
 
         }
+    }
+
+    public void Clear()
+    {
+        _rooms.Clear();
     }
 
 }

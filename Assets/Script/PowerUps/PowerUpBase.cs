@@ -14,4 +14,9 @@ public class PowerUpBase : MonoBehaviour {
 			Destroy(gameObject); //destroy the power up
 		}
 	}
+	public void CheckForAbilities(GameObject player)
+	{
+		RightClickAbility comp = player.GetComponent<RightClickAbility>();
+		if(comp != null) Destroy(comp);
+	}
 }

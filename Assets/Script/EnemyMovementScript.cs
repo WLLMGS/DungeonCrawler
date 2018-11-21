@@ -28,6 +28,6 @@ public class EnemyMovementScript : MonoBehaviour {
 
     public void Activate(bool activate)
     {
-        _IsActivated = activate;
+        _IsActivated = true;
     }
 }

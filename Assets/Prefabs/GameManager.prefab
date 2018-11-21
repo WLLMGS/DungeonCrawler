@@ -55,3 +55,14 @@ MonoBehaviour:
   - {fileID: 1436202764767132, guid: d54788dd572b6ec4a9fb4e02ee66f733, type: 2}
   - {fileID: 1743229723292328, guid: 5f1567aefb6da754aace7dff900b48be, type: 2}
   - {fileID: 1026514101323420, guid: 7ad983ad97865ba498dddc7e396247cd, type: 2}
+  _items:
+  - {fileID: 1806553831072544, guid: cfa56114c9459db40a8f8cf7544ccde9, type: 2}
+  - {fileID: 1514702110610286, guid: 13c673ca9738e2a4c8e099ab079f0a01, type: 2}
+  - {fileID: 1705609337361096, guid: 4a025064686f4b6498f4b46e4d17d196, type: 2}
+  - {fileID: 1038312142452064, guid: 14fc2ea4f0f3e1d428c1402fe7afeb61, type: 2}
+  - {fileID: 1457615645417388, guid: fcd4404818eedaf4aa2ab0e9b5f8d748, type: 2}
+  _coin: {fileID: 1265383655439226, guid: bc5ed3f56f5620943acfc062bcd29c95, type: 2}
+  _width: 5
+  _height: 5
+  _randomRooms: 3
+  _itemRooms: 1

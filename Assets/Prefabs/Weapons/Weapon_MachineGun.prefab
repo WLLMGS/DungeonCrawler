@@ -149,7 +149,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 2221452cebb93014b824a42ddac8341e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _gundamage: 1
+  _gundamage: 0.8
   _bullet: {fileID: 1179704381822860, guid: 6206b5554e325a74c9ec6e16fcb58cea, type: 2}
   _gunpoint: {fileID: 1138828565285732}
   _IsAutomatic: 1

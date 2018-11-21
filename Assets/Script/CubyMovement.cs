@@ -20,6 +20,7 @@ public class CubyMovement : MonoBehaviour
     void FixedUpdate()
     {
         HandleMovement();
+        
     }
 
     void HandleMovement()

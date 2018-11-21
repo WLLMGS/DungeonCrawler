@@ -21,10 +21,13 @@ public class GunScript : MonoBehaviour
 
 
     private CameraShake _shake;
+    private PlayerStats _playerStats;
     // Use this for initialization
     void Start()
     {
         _shake = CameraShake.GetInstance();
+        _playerStats = PlayerStats.GetInstance();
+
     }
 
     // Update is called once per frame
@@ -37,6 +40,8 @@ public class GunScript : MonoBehaviour
                 HandleShooting();
 
                 _shake.Shake();
+                //add mana
+                _playerStats.AddManaPerShot();
             }
         }
         else
@@ -46,12 +51,13 @@ public class GunScript : MonoBehaviour
             {
                 if (_Cooldown <= 0.0f)
                 {
-                    _Cooldown = _firerate; //times player firerate
+                    _Cooldown = (_firerate * _playerStats.GetFirerate()); //times player firerate
                     HandleShooting();
                     _shake.Shake();
+                    //add mana
+                    _playerStats.AddManaPerShot();
                 }
             }
-            //handle cooldown
         }
     }
 
@@ -96,9 +102,10 @@ public class GunScript : MonoBehaviour
                 SpawnBullet(angle);
             }
         }
-        else 
+        else
         {
             SpawnBullet(CalculateAngle());
+
         }
     }
     public void SetBulletsPerShot(int number)

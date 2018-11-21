@@ -165,7 +165,7 @@ MonoBehaviour:
   _bullet: {fileID: 1179704381822860, guid: 6206b5554e325a74c9ec6e16fcb58cea, type: 2}
   _gunpoint: {fileID: 1212792753704804}
   _IsAutomatic: 1
-  _firerate: 0.1
+  _firerate: 0.2
 --- !u!212 &212828941744041110
 SpriteRenderer:
   m_ObjectHideFlags: 1

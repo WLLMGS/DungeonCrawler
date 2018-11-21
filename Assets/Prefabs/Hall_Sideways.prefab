@@ -86,7 +86,7 @@ GameObject:
   - component: {fileID: 61572426299848364}
   m_Layer: 9
   m_Name: Hall_Sideways
-  m_TagString: Untagged
+  m_TagString: Room
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0

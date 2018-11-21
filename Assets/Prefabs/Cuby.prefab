@@ -43,7 +43,9 @@ GameObject:
   - component: {fileID: 114934925811178214}
   - component: {fileID: 114946895568132886}
   - component: {fileID: 58052833506624332}
-  m_Layer: 0
+  - component: {fileID: 114370349995034310}
+  - component: {fileID: 114912796987111744}
+  m_Layer: 10
   m_Name: Cuby
   m_TagString: Player
   m_Icon: {fileID: 0}
@@ -70,7 +72,7 @@ Transform:
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 1132531801466842}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -1.7842768, y: -0.29523683, z: -5}
+  m_LocalPosition: {x: 0, y: 0, z: -5}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 4064302337654866}
@@ -167,18 +169,46 @@ Animator:
   m_HasTransformHierarchy: 1
   m_AllowConstantClipSamplingOptimization: 1
   m_KeepAnimatorControllerStateOnDisable: 0
+--- !u!114 &114370349995034310
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1132531801466842}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 3dd71c981c49eb342a4aa1ab0ab17ebe, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!114 &114879811663913410
 MonoBehaviour:
   m_ObjectHideFlags: 1
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 1071965233523026}
-  m_Enabled: 1
+  m_Enabled: 0
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 9d7103743d99d164d8e29b4453fad5eb, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   _doFlip: 1
+--- !u!114 &114912796987111744
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1132531801466842}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5dc9d5a6a6e99ff4992f56c24f7d6ef5, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _firerate: 1.5
+  _damage: 0.75
+  _manaPerSecond: 1
+  _manaPerShot: 5
+  _maxMana: 100
+  _currentMana: 0
 --- !u!114 &114934925811178214
 MonoBehaviour:
   m_ObjectHideFlags: 1

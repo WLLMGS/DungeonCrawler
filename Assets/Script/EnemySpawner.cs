@@ -29,7 +29,7 @@ public class EnemySpawner : MonoBehaviour
         return _instance;
     }
 
-    public void SpawnEnemies()
+    public void SpawnEnemies(int min, int max)
     {   
         foreach (GameObject room in _rooms)
         {
@@ -40,7 +40,7 @@ public class EnemySpawner : MonoBehaviour
                 Vector3 spawnradius_max = room.transform.Find("SpawnRadius_max").position; //get max spawn pos
                 Vector3 spawnradius_min = room.transform.Find("SpawnRadius_min").position; // get min spawn pos
 				
-				int amount = Random.Range(5,20);
+				int amount = Random.Range(min,max);
                
 			   	for(int i = 0; i < amount ; ++i){
 					//determine spawn pos
@@ -57,5 +57,10 @@ public class EnemySpawner : MonoBehaviour
 				}
             }
         }
+    }
+
+    public void Clear()
+    {
+        _rooms.Clear();
     }
 }

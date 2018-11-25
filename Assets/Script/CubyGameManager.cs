@@ -14,6 +14,8 @@ public class CubyGameManager : MonoBehaviour
     [SerializeField] private int _height = 0;
     [SerializeField] private int _randomRooms = 3;
     [SerializeField] private int _itemRooms = 2;
+    [SerializeField] private bool _doSpawnEnemies = false;
+
     private GameObject _cuby;
     private GameObject _minimapCam;
     private DungeonGenerator _levelGenerator;
@@ -33,6 +35,11 @@ public class CubyGameManager : MonoBehaviour
         _enemySpawner = EnemySpawner.GetInstance();
 
         GenerateLevel();
+    }
+
+    void OnApplicationQuit()
+    {
+        DataWriter.SaveData();
     }
 
     private void GenerateLevel()
@@ -62,7 +69,7 @@ public class CubyGameManager : MonoBehaviour
         _minimapCam.transform.position = new Vector3(_cuby.transform.position.x, _cuby.transform.position.y, -100);
 
         //init enemies
-        StartCoroutine(Init());
+        if(_doSpawnEnemies) StartCoroutine(Init());
     }
 
     public static CubyGameManager GetInstance()
@@ -78,7 +85,7 @@ public class CubyGameManager : MonoBehaviour
 
     void Update()
     {
-        if (Input.GetKeyDown(KeyCode.E)) GenerateLevel();
+        //if (Input.GetKeyDown(KeyCode.E)) GenerateLevel();
     }
 
     public void SpawnWeapon(Vector3 location)
@@ -86,11 +93,13 @@ public class CubyGameManager : MonoBehaviour
         int index = Random.Range(0, _weapons.Count);
         Instantiate(_weapons[index], location, Quaternion.identity);
     }
-    public void SpawnItem(Vector3 location)
+    public GameObject SpawnItem(Vector3 location)
     {
         int index = Random.Range(0, _items.Count);
-        Instantiate(_items[index], location, Quaternion.identity);
+        GameObject item = Instantiate(_items[index], location, Quaternion.identity);
         _items.Remove(_items[index]); //remove from item pool
+    
+        return item;
     }
     public void DropCoin(Vector2 location)
     {
@@ -98,4 +107,10 @@ public class CubyGameManager : MonoBehaviour
         pos.z = 0;
         Instantiate(_coin, pos, Quaternion.identity);
     }
+
+    public void AdvanceLevel()
+    {
+        GenerateLevel();
+    }
+    
 }

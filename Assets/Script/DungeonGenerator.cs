@@ -11,6 +11,9 @@ public class DungeonGenerator : MonoBehaviour
     [SerializeField] private int _height = 12;
     [SerializeField] private List<GameObject> _startRoomLayouts = new List<GameObject>();
     [SerializeField] private List<GameObject> _itemRoomLayouts = new List<GameObject>();
+    [SerializeField] private List<GameObject> _shopRoomLayouts = new List<GameObject>();
+    [SerializeField] private List<GameObject> _endRoomLayouts = new List<GameObject>();
+
 
     float _yOffset = 21.0f;
     float _xOffset = 29.0f;
@@ -68,6 +71,12 @@ public class DungeonGenerator : MonoBehaviour
 
         //add spawn room
         AddSpawnroom();
+
+        //add shop
+        AddShopRooms();
+
+        //add end room
+        AddEndRoom();
 
         //add room layouts
         AddRoomLayouts();
@@ -411,7 +420,7 @@ public class DungeonGenerator : MonoBehaviour
 
             var roomtype = room.GetComponent<RoomStats>().GetRoomType();
 
-            if (roomtype != RoomType.SpecialRoom && roomtype != RoomType.SpawnRoom)
+            if (roomtype != RoomType.SpecialRoom && roomtype != RoomType.SpawnRoom && roomtype != RoomType.ShopRoom)
             {
                 room.GetComponent<RoomStats>().SetRoomType(RoomType.SpecialRoom);
                 ++i; //increase for loop index
@@ -427,10 +436,42 @@ public class DungeonGenerator : MonoBehaviour
             int rindex = Random.Range(0, _rooms.Count);
             var room = _rooms[rindex];
             var roomtype = room.GetComponent<RoomStats>().GetRoomType();
-            if (roomtype != RoomType.SpecialRoom)
+            if (roomtype != RoomType.SpecialRoom && roomtype != RoomType.ShopRoom)
             {
                 room.GetComponent<RoomStats>().SetRoomType(RoomType.SpawnRoom);
                 _cubySpawnPos = room.transform.position;
+                searching = false;
+            }
+        }
+    }
+
+    public void AddShopRooms()
+    {
+        bool searching = true;
+        while (searching)
+        {
+            int rindex = Random.Range(0, _rooms.Count);
+            var room = _rooms[rindex];
+            var roomtype = room.GetComponent<RoomStats>().GetRoomType();
+            if (roomtype != RoomType.SpecialRoom && roomtype != RoomType.ShopRoom && roomtype != RoomType.SpawnRoom)
+            {
+                room.GetComponent<RoomStats>().SetRoomType(RoomType.ShopRoom);
+                searching = false;
+            }
+        }
+    }
+
+    public void AddEndRoom()
+    {
+        bool searching = true;
+        while (searching)
+        {
+            int rindex = Random.Range(0, _rooms.Count);
+            var room = _rooms[rindex];
+            var roomtype = room.GetComponent<RoomStats>().GetRoomType();
+            if (roomtype == RoomType.BasicRoom)
+            {
+                room.GetComponent<RoomStats>().SetRoomType(RoomType.EndRoom);
                 searching = false;
             }
         }
@@ -447,11 +488,19 @@ public class DungeonGenerator : MonoBehaviour
             {
                 case RoomType.SpecialRoom:
                     rindex = Random.Range(0, _itemRoomLayouts.Count);
-                    Instantiate(_itemRoomLayouts[rindex], room.transform.position, Quaternion.identity);        
+                    Instantiate(_itemRoomLayouts[rindex], room.transform.position, Quaternion.identity);
                     break;
                 case RoomType.SpawnRoom:
                     rindex = Random.Range(0, _startRoomLayouts.Count);
                     Instantiate(_startRoomLayouts[rindex], room.transform.position, Quaternion.identity);
+                    break;
+                case RoomType.ShopRoom:
+                    rindex = Random.Range(0, _shopRoomLayouts.Count);
+                    Instantiate(_shopRoomLayouts[rindex], room.transform.position, Quaternion.identity);
+                    break;
+                case RoomType.EndRoom:
+                    rindex = Random.Range(0, _endRoomLayouts.Count);
+                    Instantiate(_endRoomLayouts[rindex], room.transform.position, Quaternion.identity);
                     break;
             }
 

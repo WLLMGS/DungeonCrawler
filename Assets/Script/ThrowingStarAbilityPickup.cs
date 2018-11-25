@@ -2,14 +2,15 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-public class ThrowingStarAbilityPickup : PowerUpBase {
+public class ThrowingStarAbilityPickup : SkillPickupBase {
 
 	[SerializeField] private GameObject _star;
 
-	public override void PowerUp(GameObject player)
+	public override void AddSkill(GameObject player, bool isPrimarySkill)
 	{
-		CheckForAbilities(player);
-		player.AddComponent(typeof(ThrowingStarAbility));
-		player.GetComponent<ThrowingStarAbility>().SetThrowingStar(_star);
+		ThrowingStarAbility ab = (ThrowingStarAbility) player.AddComponent<ThrowingStarAbility>();
+		ab.SetThrowingStar(_star);
+		ab.IsPrimarySkill = isPrimarySkill;
+		ab.SetManaCost(_manaCost);
 	}
 }

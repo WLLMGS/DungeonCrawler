@@ -14,6 +14,20 @@ public class PlayerStats : MonoBehaviour {
 	[SerializeField] private float _maxMana = 100.0f;
 	[SerializeField] private float _currentMana = 0;
 
+	//money
+	[SerializeField] private int _currentGold;
+	
+	
+	public int Gold{
+		get{
+			return _currentGold;
+		}
+		set
+		{
+			_currentGold = value;
+		}
+	}
+
 	private static PlayerStats _instance = null;
 
 	void Awake()

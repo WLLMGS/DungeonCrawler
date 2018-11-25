@@ -2,14 +2,13 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-public class TeleportPowerup : PowerUpBase {
+public class TeleportPowerup : SkillPickupBase {
 
-	public override void PowerUp(GameObject player)
+	public override void AddSkill(GameObject player, bool isPrimarySkill)
 	{
 		//check if player has ability
-		RightClickAbility ab = player.GetComponent<RightClickAbility>();
-		if(ab != null) Destroy(ab);
-
-		player.AddComponent(typeof(TeleportSkill));
+		TeleportSkill ab = (TeleportSkill) player.AddComponent(typeof(TeleportSkill));
+		ab.IsPrimarySkill = isPrimarySkill;
+		ab.SetManaCost(_manaCost);
 	}
 }

@@ -6,7 +6,9 @@ public enum RoomType
 {
 	SpawnRoom = 1,
 	BasicRoom = 2,
-	SpecialRoom = 3
+	SpecialRoom = 3,
+	ShopRoom = 4,
+	EndRoom = 5
 }
 
 public class RoomStats : MonoBehaviour {

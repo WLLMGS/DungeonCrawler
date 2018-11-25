@@ -5,6 +5,7 @@ using UnityEngine;
 public class ThrowingStarAbility : RightClickAbility
 {
     [SerializeField] private GameObject _throwingstar;
+    
     public void SetThrowingStar(GameObject obj)
     {
 		_throwingstar = obj;

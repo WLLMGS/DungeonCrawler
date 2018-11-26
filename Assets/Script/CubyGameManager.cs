@@ -61,6 +61,20 @@ public class CubyGameManager : MonoBehaviour
         {
             Destroy(powerup);
         }
+        //clear effects
+        foreach (GameObject effect in GameObject.FindGameObjectsWithTag("Effect"))
+        {
+            Destroy(effect);
+        }
+        //clear guns that are not picked up
+        foreach(GameObject gun in GameObject.FindGameObjectsWithTag("Gun"))
+        {
+            if(!gun.GetComponent<WeaponPickupScript>().IsPickedUp)
+            {
+                Destroy(gun);
+            }
+        }
+        
         //generate level
         _levelGenerator.GenerateLevel(_width, _height, _randomRooms, _itemRooms);
 

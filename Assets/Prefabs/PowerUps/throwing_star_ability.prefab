@@ -306,6 +306,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _skillImage: {fileID: 21300000, guid: 2cf0653c5254cba47be1306f7ddc60e1, type: 3}
   _manaCost: 30
+  _description: Summons A Ring Of Throwingstars!
   _star: {fileID: 1306091367261334, guid: 262a6dbc833ee6e4a99968b93a63edfa, type: 2}
 --- !u!114 &114785821072997758
 MonoBehaviour:

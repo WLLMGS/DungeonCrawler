@@ -9,6 +9,8 @@ TagManager:
   - FriendlyBullet
   - Room
   - PowerUp
+  - Effect
+  - Gun
   layers:
   - Default
   - TransparentFX

@@ -7,7 +7,7 @@ public class SkillPickupBase : MonoBehaviour
 
     [SerializeField] private Sprite _skillImage;
     [SerializeField] protected float _manaCost = 25.0f;
-
+    [SerializeField] protected string _description = "default description";
     private GameObject _keys;
     private bool _canPickUp = true;
     private bool _isHovering = false;
@@ -45,6 +45,7 @@ public class SkillPickupBase : MonoBehaviour
                 RemoveExistingAbilities(true); //check for pre existing primary abilities
                 AddSkill(_player, true); //add skill to player
                 UISkillPortraitManager.GetInstance().AssignFirstSkillPortrait(_skillImage); //add portrait to UI
+                ItemDescriptionScript.Instance.Activate(_description);
                 Destroy(gameObject); //destroy the power up obj
 
             }
@@ -53,6 +54,7 @@ public class SkillPickupBase : MonoBehaviour
                 RemoveExistingAbilities(false); //check for pre existing secondary abilities
                 AddSkill(_player, false); //add skill to player
                 UISkillPortraitManager.GetInstance().AssignSecondSkillPortrait(_skillImage); //add portait to UI
+                ItemDescriptionScript.Instance.Activate(_description);
                 Destroy(gameObject); //destroy the power up obj
             }
         }

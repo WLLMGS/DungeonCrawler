@@ -254,6 +254,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _skillImage: {fileID: 21300000, guid: ea758d36e34e1a447bc9d8ccf8314ff9, type: 3}
+  _manaCost: 25
+  _description: Teleport!
 --- !u!114 &114518132090610350
 MonoBehaviour:
   m_ObjectHideFlags: 1

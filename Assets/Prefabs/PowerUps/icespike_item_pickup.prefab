@@ -376,6 +376,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _skillImage: {fileID: 21300000, guid: a7f8a21bacebaa141a9491a912bdf0cc, type: 3}
   _manaCost: 35
+  _description: Shoots Ice Spikes!
   _icespike: {fileID: 1716795567505014, guid: ef44012356d6376498f258091581a614, type: 2}
 --- !u!212 &212881657241165568
 SpriteRenderer:

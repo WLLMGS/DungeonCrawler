@@ -12,6 +12,13 @@ public class WeaponPickupScript : MonoBehaviour {
 
     bool _canPickupAgain = true;
 
+    public bool IsPickedUp
+    {
+        get{
+            return _isPickedUp;
+        }
+    }
+
     private void Start()
     {
         _player = GameObject.Find("Cuby");

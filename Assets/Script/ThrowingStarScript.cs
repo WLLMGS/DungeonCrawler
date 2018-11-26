@@ -20,13 +20,14 @@ public class ThrowingStarScript : MonoBehaviour
 
     void OnTriggerEnter2D(Collider2D col)
     {
-        if (col.tag == "Enemy")
+        if (col.tag == "Enemy"
+        && _doDestroyOnImpact)
         {
             col.gameObject.GetComponent<EnemyBloodScript>().SpawnBlood();
-            col.gameObject.GetComponent<EnemyHealth>().AddHealth(-_stats.GetDamage() * 5.0f);
+            col.gameObject.GetComponent<EnemyHealth>().AddHealth(-_stats.Damage * 5.0f);
             CameraShake.GetInstance().Shake();
 
-            if (_doDestroyOnImpact) Destroy(gameObject);
+            Destroy(gameObject);
         }
     }
 
@@ -35,7 +36,7 @@ public class ThrowingStarScript : MonoBehaviour
         if (col.tag == "Enemy")
         {
             col.gameObject.GetComponent<EnemyBloodScript>().SpawnBlood();
-            col.gameObject.GetComponent<EnemyHealth>().AddHealth(-_stats.GetDamage() * 5.0f);
+            col.gameObject.GetComponent<EnemyHealth>().AddHealth(-_stats.Damage * 30.0f * Time.deltaTime);
             CameraShake.GetInstance().Shake();
 		}
 

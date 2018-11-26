@@ -6,6 +6,7 @@ public class PowerUpBase : MonoBehaviour
 {
 
     private bool _canPickUp = true;
+    [SerializeField] protected string _description = "description test";
     [SerializeField] protected float _manaCost = 20.0f;
     [SerializeField] protected bool _IsSkill = false;
 
@@ -33,15 +34,11 @@ public class PowerUpBase : MonoBehaviour
     {
         if (_isHovering)
         {
-            if (_IsSkill)
-            {
 
-            }
-            else
-            {
-                PowerUp(_player);
-                Destroy(gameObject);
-            }
+            ItemDescriptionScript.Instance.Activate(_description);
+            PowerUp(_player);
+            Destroy(gameObject);
+
         }
     }
 

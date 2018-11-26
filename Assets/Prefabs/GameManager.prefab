@@ -62,22 +62,26 @@ MonoBehaviour:
   - {fileID: 1038312142452064, guid: 14fc2ea4f0f3e1d428c1402fe7afeb61, type: 2}
   - {fileID: 1457615645417388, guid: fcd4404818eedaf4aa2ab0e9b5f8d748, type: 2}
   - {fileID: 1764785862250444, guid: b7ebf683effc1724d853cd65903e9083, type: 2}
-  - {fileID: 1457615645417388, guid: fcd4404818eedaf4aa2ab0e9b5f8d748, type: 2}
-  - {fileID: 1457615645417388, guid: fcd4404818eedaf4aa2ab0e9b5f8d748, type: 2}
-  - {fileID: 1457615645417388, guid: fcd4404818eedaf4aa2ab0e9b5f8d748, type: 2}
-  - {fileID: 1457615645417388, guid: fcd4404818eedaf4aa2ab0e9b5f8d748, type: 2}
-  - {fileID: 1457615645417388, guid: fcd4404818eedaf4aa2ab0e9b5f8d748, type: 2}
-  - {fileID: 1457615645417388, guid: fcd4404818eedaf4aa2ab0e9b5f8d748, type: 2}
-  - {fileID: 1457615645417388, guid: fcd4404818eedaf4aa2ab0e9b5f8d748, type: 2}
-  - {fileID: 1457615645417388, guid: fcd4404818eedaf4aa2ab0e9b5f8d748, type: 2}
-  - {fileID: 1457615645417388, guid: fcd4404818eedaf4aa2ab0e9b5f8d748, type: 2}
-  - {fileID: 1457615645417388, guid: fcd4404818eedaf4aa2ab0e9b5f8d748, type: 2}
-  - {fileID: 1457615645417388, guid: fcd4404818eedaf4aa2ab0e9b5f8d748, type: 2}
-  - {fileID: 1457615645417388, guid: fcd4404818eedaf4aa2ab0e9b5f8d748, type: 2}
-  - {fileID: 1457615645417388, guid: fcd4404818eedaf4aa2ab0e9b5f8d748, type: 2}
-  - {fileID: 1457615645417388, guid: fcd4404818eedaf4aa2ab0e9b5f8d748, type: 2}
+  - {fileID: 1687964908196142, guid: 10c44647c508c5a45ad8a76b080ae2f7, type: 2}
+  - {fileID: 1687964908196142, guid: 10c44647c508c5a45ad8a76b080ae2f7, type: 2}
+  - {fileID: 1000228143430026, guid: d593837059844eb4f9aa84cb4b151950, type: 2}
+  - {fileID: 1000228143430026, guid: d593837059844eb4f9aa84cb4b151950, type: 2}
+  - {fileID: 1000228143430026, guid: d593837059844eb4f9aa84cb4b151950, type: 2}
+  - {fileID: 1687964908196142, guid: 10c44647c508c5a45ad8a76b080ae2f7, type: 2}
+  - {fileID: 1806553831072544, guid: cfa56114c9459db40a8f8cf7544ccde9, type: 2}
+  - {fileID: 1806553831072544, guid: cfa56114c9459db40a8f8cf7544ccde9, type: 2}
+  - {fileID: 1038312142452064, guid: 14fc2ea4f0f3e1d428c1402fe7afeb61, type: 2}
+  - {fileID: 1038312142452064, guid: 14fc2ea4f0f3e1d428c1402fe7afeb61, type: 2}
+  - {fileID: 1038312142452064, guid: 14fc2ea4f0f3e1d428c1402fe7afeb61, type: 2}
+  - {fileID: 1705609337361096, guid: 4a025064686f4b6498f4b46e4d17d196, type: 2}
+  - {fileID: 1514702110610286, guid: 13c673ca9738e2a4c8e099ab079f0a01, type: 2}
+  - {fileID: 1764785862250444, guid: b7ebf683effc1724d853cd65903e9083, type: 2}
+  - {fileID: 1764813239894768, guid: 04108226f9dbfc4468072d494127dd26, type: 2}
+  - {fileID: 1764813239894768, guid: 04108226f9dbfc4468072d494127dd26, type: 2}
+  - {fileID: 1764813239894768, guid: 04108226f9dbfc4468072d494127dd26, type: 2}
   _coin: {fileID: 1265383655439226, guid: bc5ed3f56f5620943acfc062bcd29c95, type: 2}
   _width: 3
   _height: 3
   _randomRooms: 1
   _itemRooms: 1
+  _doSpawnEnemies: 1

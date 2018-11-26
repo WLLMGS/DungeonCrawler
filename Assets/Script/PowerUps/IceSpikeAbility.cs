@@ -15,7 +15,7 @@ public class IceSpikeAbility : RightClickAbility {
 			Quaternion quat = Quaternion.Euler(new Vector3(0,0,angle));
 			GameObject spike = Instantiate(_icespike, transform.position, quat);
 			spike.GetComponent<BulletScript>().SetDirection(Mathf.Cos(angle * Mathf.Deg2Rad), Mathf.Sin(angle * Mathf.Deg2Rad));
-			spike.GetComponent<BulletScript>().SetDamage(_playerStats.GetDamage() * 3.0f);
+			spike.GetComponent<BulletScript>().SetDamage(_playerStats.Damage * 3.0f);
 			angle += 360.0f / (amount);
 		}
 	}

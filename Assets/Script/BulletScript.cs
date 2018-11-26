@@ -39,7 +39,8 @@ public class BulletScript : MonoBehaviour {
         if (col.gameObject.tag == "Enemy")
         {
             col.gameObject.GetComponent<EnemyBloodScript>().SpawnBlood();
-            col.gameObject.GetComponent<EnemyHealth>().AddHealth(-_damage * _playerStats.GetDamage());
+            col.gameObject.GetComponent<EnemyHealth>().AddHealth(-_damage * _playerStats.Damage);
+            Debug.Log("DAMAGE HIT: " + _damage * _playerStats.Damage);
             if(!_isPiercing) Destroy(gameObject);
         }
     }

@@ -230,6 +230,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 35d18d308d5a3b74bbc7def7be3d439c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  _description: Double Shot!
+  _manaCost: 20
+  _IsSkill: 0
 --- !u!212 &212378406591702550
 SpriteRenderer:
   m_ObjectHideFlags: 1

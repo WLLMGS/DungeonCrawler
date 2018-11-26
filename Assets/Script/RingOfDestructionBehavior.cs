@@ -9,7 +9,7 @@ public class RingOfDestructionBehavior : MonoBehaviour
     {
         if (other.tag == "Enemy")
         {
-            other.GetComponent<EnemyHealth>().AddHealth(-PlayerStats.GetInstance().GetDamage() * 7.5f);
+            other.GetComponent<EnemyHealth>().AddHealth(-PlayerStats.GetInstance().Damage * 7.5f);
         }
     }
 }

@@ -28,6 +28,38 @@ public class PlayerStats : MonoBehaviour {
 		}
 	}
 
+	public float ManaPerSecond
+	{
+		get{
+			return _manaPerSecond;
+		}
+		set{
+			_manaPerSecond = value;
+		}
+	}
+
+	public float Damage
+	{
+		get{
+			return _damage;
+		}
+		set{
+			_damage = value;
+		}
+	}
+
+	public float Firerate
+	{
+		get{
+			return _firerate;
+		}
+		set
+		{
+			_firerate = value;
+			Mathf.Clamp(_firerate, 0.01f,3.0f); //make sure firerate doesnt go under 0
+		}
+	}
+
 	private static PlayerStats _instance = null;
 
 	void Awake()
@@ -50,24 +82,9 @@ public class PlayerStats : MonoBehaviour {
 
 	}
 
-    public float GetFirerate()
-	{
-		return _firerate;
-	}
-	public void SetFirerate(float value)
-	{
-		_firerate = value;
-	}
+  
 
-	public float GetDamage()
-	{
-		return _damage;
-	}
-
-	public void SetDamage(float value)
-	{
-		_damage = value;
-	}
+	
 
 	//mana
 	public void AddCurrentMana(float mana)

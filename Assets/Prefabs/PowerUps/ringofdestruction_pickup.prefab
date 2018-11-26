@@ -376,6 +376,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _skillImage: {fileID: 21300000, guid: e870aa3e9bfa6404eaf47c2f13f49ac8, type: 3}
   _manaCost: 75
+  _description: Ring Of Destruction!
 --- !u!212 &212187995701154580
 SpriteRenderer:
   m_ObjectHideFlags: 1

@@ -230,6 +230,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 14044339543455a4c96772476965bcad, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  _description: Throwing Start Orbital!
+  _manaCost: 20
+  _IsSkill: 0
   _throwingStar: {fileID: 1306091367261334, guid: 262a6dbc833ee6e4a99968b93a63edfa,
     type: 2}
 --- !u!212 &212211365083695602

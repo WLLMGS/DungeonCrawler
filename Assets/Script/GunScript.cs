@@ -51,7 +51,7 @@ public class GunScript : MonoBehaviour
             {
                 if (_Cooldown <= 0.0f)
                 {
-                    _Cooldown = (_firerate * _playerStats.GetFirerate()); //times player firerate
+                    _Cooldown = (_firerate * _playerStats.Firerate); //times player firerate
                     HandleShooting();
                     _shake.Shake();
                     //add mana

@@ -76,11 +76,15 @@
      <Compile Include="Assets\Script\EnemySpawner.cs" />
      <Compile Include="Assets\Script\GunScript.cs" />
      <Compile Include="Assets\Script\IceSpikePickup.cs" />
+     <Compile Include="Assets\Script\ItemDescriptionScript.cs" />
      <Compile Include="Assets\Script\ItemSpawnScript.cs" />
      <Compile Include="Assets\Script\MinimapCamera.cs" />
      <Compile Include="Assets\Script\PlayerStats.cs" />
+     <Compile Include="Assets\Script\PowerUps\DamageUpPowerUp.cs" />
      <Compile Include="Assets\Script\PowerUps\DoubleShotPowerup.cs" />
+     <Compile Include="Assets\Script\PowerUps\FirerateUpPowerUp.cs" />
      <Compile Include="Assets\Script\PowerUps\IceSpikeAbility.cs" />
+     <Compile Include="Assets\Script\PowerUps\ManaRegenPowerup.cs" />
      <Compile Include="Assets\Script\PowerUps\PowerUpBase.cs" />
      <Compile Include="Assets\Script\PowerUps\RingOfDestructionPickup.cs" />
      <Compile Include="Assets\Script\PowerUps\TeleportPowerup.cs" />
